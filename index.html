@@ -1,70 +1,12 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <!-- <meta http-equiv="refresh" content="1" > -->
-        <title>CursorPaint</title>
-        <style>
-        body {
-          text-align: center;
-        }
-        </style>
-    </head>
-    <body>
-
-        <!-- Import Processing.js -->
-        <script src="processing.min.js"></script>
-
-        <!-- Canvas -->
-        <canvas id = "canvas" style="border:2px solid #0000FF;"></canvas>
-        
-        <!-- the code -->
-        <script type="application/processing" data-processing-target="canvas">
-           // ProcessingJS below!
-// Initialization Settings
-size(600, 400);
-frameRate(60);
-background(255, 255, 255);
-fill(0, 0, 0);
-noCursor();
-// Define the array
-var drawingData = [];
-// Define variables for 'draw' loop
-var dataNum = 0;
-var thePenSize = 16;
-draw = function() {
-  // Take in input
-  if (mousePressed === true) {
-    drawingData.push(mouseX);
-    drawingData.push(mouseY);
-  } else {
-    if (drawingData[drawingData.length - 1] !== -1 && drawingData.length > 0) {
-      drawingData.push(-1);
-    }
-  }
-  // Display the recording
-  background(255, 255, 255);
-  strokeWeight(thePenSize);
-  stroke(0, 0, 0);
-  dataNum = 0;
-  while (dataNum+2 < drawingData.length) {
-    if (drawingData[dataNum+2] !== -1) {
-      line(drawingData[dataNum],drawingData[dataNum+1],drawingData[dataNum+2],drawingData[dataNum+3]);
-      dataNum += 2;
-    } else {
-      dataNum += 3;
-    }
-  }
-  // Display the cursor
-  strokeWeight(2);
-  stroke(255, 0, 0);
-  line(mouseX-10, mouseY, mouseX+10, mouseY);
-  line(mouseX, mouseY-10, mouseX, mouseY+10);
-  //text(drawingData,0,400)
-}
-           // ProcessingJS above!
-        </script>
-        <p>Use the mouse to draw in the blue rectangle.</p>
-        <p><a href="https://stephenhapp.github.io/subpage">Go to a subpage</a> of this website.</p>
-    </body>
+  <head>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <h1>Welcome to my site!</h1>
+    <h3>I'll be updating it regularly as I improve my skills.</h3>
+    <h3>Here is something that I've done:</h3>
+    <p><a href="cursor-paint.html">CursorPaint</a> (program created Feb. 2019, page updated on 3/7/2019)</p>
+  </body>
 </html>
