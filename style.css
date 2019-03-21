@@ -1,4 +1,5 @@
 body {
+  margin:0;
   background-color:black;
   color:white;
   text-align: center;
@@ -7,16 +8,16 @@ body {
 
 #container {
   width: 100vw;
-  height: 40vh;
+  height: 200px;
   position: relative;
   background-color: black;
 }
 #animate {
-  width: 600px;
+  width: 100vw;
   height: 200px;
   position: absolute;
   left:0px;
   top:0px;
   color: white;
-  font-size:10vw;
+  font-size: 12vw;
 }
