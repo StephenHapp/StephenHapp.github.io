@@ -1,13 +1,15 @@
 body {
+  background-color:black;
+  color:white;
   text-align: center;
   font-family:"Source Sans Pro",sans-serif;
 }
 
 #container {
-  width: 600px;
-  height: 400px;
+  width: 100vw;
+  height: 40vh;
   position: relative;
-  background: black;
+  background-color: black;
 }
 #animate {
   width: 600px;
@@ -16,5 +18,5 @@ body {
   left:0px;
   top:0px;
   color: white;
-  font-size:4em;
+  font-size:10vw;
 }
