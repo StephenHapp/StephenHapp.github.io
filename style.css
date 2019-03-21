@@ -9,7 +9,7 @@ body {
 
 #container {
   width: 100vw;
-  height: 200px;
+  height: 50vh;
   position: relative;
   background-color: black;
 }
@@ -20,5 +20,5 @@ body {
   left:0px;
   top:0px;
   color: white;
-  font-size: 2vw;
+  font-size: 4vw;
 }
