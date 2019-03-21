@@ -1,3 +1,20 @@
 body {
   text-align: center;
+  font-family:"Source Sans Pro",sans-serif;
+}
+
+#container {
+  width: 600px;
+  height: 400px;
+  position: relative;
+  background: black;
+}
+#animate {
+  width: 600px;
+  height: 200px;
+  position: absolute;
+  left:0px;
+  top:0px;
+  color: white;
+  font-size:4em;
 }
