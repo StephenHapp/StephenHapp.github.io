@@ -9,18 +9,17 @@ body {
 
 #container {
   width: 100vw;
-  height: 20vw;
+  height: 24vw;
   position: relative;
-  background-color: black;
+  background-color: none;
 }
 
 #animate {
   width: 80vw;
-  height: 200px;
+  height: 24vw;
   position: absolute;
-  left: 0px;
-  top: 0px;
+  left: 10vw;
+  top: -1vw;
   color: white;
   font-size: 5vw;
 }
-
