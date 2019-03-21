@@ -4,6 +4,7 @@ body {
   color:white;
   text-align: center;
   font-family:"Source Sans Pro",sans-serif;
+  overflow-x:hidden;
 }
 
 #container {
@@ -19,5 +20,5 @@ body {
   left:0px;
   top:0px;
   color: white;
-  font-size: 30px;
+  font-size: 40px;
 }
