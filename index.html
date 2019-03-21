@@ -17,30 +17,33 @@
     <h3>Here is something that I've done:</h3>
     <p><a href="pages/cursor-paint.html">CursorPaint</a> (program created Feb. 2019, webpage updated on 3/21/2019)</p>
     <script>
-    var mouseOnBox = false;
-    function mouseOverBox() {
-      mouseOnBox = true;
-    }
-    function mouseOffBox() {
-      mouseOnBox = false;
-      document.getElementById("animate").style.color = "white";
-    }
-    function myMove() {
-      var elem = document.getElementById("animate");   
-      var timer = 0;
-      var id = setInterval(frame, 5);
-      function frame() {
-        timer++; 
-        elem.style.top = -1 - Math.sin(timer * Math.PI / 250)*2 + "vw"; 
-        elem.style.left = 10 + Math.sin(timer * Math.PI / 500)*4 + "vw";
-        if (mouseOnBox === true && timer % 20 === 0) {
-          newColor();
+      var mouseOnBox = false;
+      var colorShade = 0;
+      
+      function mouseOverBox() {
+        mouseOnBox = true;
+      }
+      function mouseOffBox() {
+        mouseOnBox = false;
+        document.getElementById("animate").style.color = "white";
+      }
+      function myMove() {
+        var elem = document.getElementById("animate");   
+        var timer = 0;
+        var id = setInterval(frame, 5);
+        function frame() {
+          timer++; 
+          elem.style.top = -1 - Math.sin(timer * Math.PI / 250)*2 + "vw"; 
+          elem.style.left = 10 + Math.sin(timer * Math.PI / 500)*4 + "vw";
+          if (mouseOnBox === true && timer % 20 === 0) {
+            newColor();
+          }
         }
       }
-    }
-    function newColor() {
-      var elem = document.getElementById("animate");
-      elem.style.color = "hsl(" + Math.floor(Math.random() * 360) + ", 100%, 70%)";
+      function newColor() {
+        var elem = document.getElementById("animate");
+        colorShade = (colorShade + 80 + Math.floor((Math.random() * 200))) % 360;
+        elem.style.color = "hsl(" + colorShade + ", 100%, 70%)";
     }
     </script>
   </body>
