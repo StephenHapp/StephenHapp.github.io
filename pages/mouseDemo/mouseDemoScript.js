@@ -11,13 +11,12 @@ function onResize() {
   document.getElementById("top-detect").style.height = window.innerHeight + "px";
   elem.style.width = window.innerHeight * 0.1 + "px";
   elem.style.height = window.innerWidth * 0.1 + "px";
-  document.getElementById("heading").style.left = window.innerWidth / 2 - document.getElementById("heading").offsetWidth / 2 + "px";
-  document.getElementById("heading").style.top = window.innerHeight / 2 - document.getElementById("heading").offsetHeight / 2 + "px";
+  document.getElementById("text").style.left = window.innerWidth / 2 - document.getElementById("text").offsetWidth / 2 + "px";
+  document.getElementById("text").style.top = window.innerHeight / 2 - document.getElementById("text").offsetHeight / 2 + "px";
 }
 
 
 function showCoords(event) {
-  //document.getElementById("top-detect").style.zIndex = 9999;
   
   // Set these yourself
   var cW = window.innerWidth; // container width in px
@@ -46,7 +45,6 @@ function showCoords(event) {
     elem.style.top = y - (eH / 2) + "px";
   }
   
-  //document.getElementById("top-detect").style.zIndex = 0;
 }
 
 var colorShade = 0;
