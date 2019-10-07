@@ -4,15 +4,52 @@
     <link rel="stylesheet" href="../style.css">
     <link rel="shortcut icon" href="../favicon.ico">
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:900" rel="stylesheet">
-    <title>Stephen Happ - Arthur's World</title>
-
     <style>
+      img {
+            position:relative;
+            margin:5vh;
+            width:90%;
+      }
 
+      #map {
+          position:relative;
+          background-color:rgb(146, 165, 222);
+          max-height:100vh;
+      }
+
+      #place-1 {
+          position:absolute;
+          top:16%;
+          left:21%;
+          width:9%;
+          height:10%;
+          background-color:#F88;
+      }
+
+      #place-2 {
+          position:absolute;
+          top:54%;
+          left:66%;
+          width:17%;
+          height:5%;
+          background-color:#484;
+      }
     </style>
+    <title>Stephen Happ - Arthur's World</title>
+    
   </head>
   <body>
-    <h1>Heading 1</h1>
-    <h2>Heading 2</h2>
-    <p>Paragraph</p>
+        <div id="map">
+            <img src="https://www.kasandbox.org/programming-images/animals/fox.png">
+            <a href="https://www.google.com">
+                <div id="place-1"></div>
+            </a> 
+            <a href="https://www.google.com">
+                <div id="place-2"></div>
+            </a> 
+        </div>
+      <h1>Heading 1</h1>
+      <h2>Heading 2</h2>
+      <p>Paragraph</p>
   </body>
 </html>
