@@ -1,0 +1,28 @@
+body {
+  margin: 0;
+  background-color: black;
+  color: white;
+  text-align: center;
+  font-family: "Source Sans Pro",sans-serif;
+  overflow-x: hidden;
+}
+
+h1 {
+  font-size: 4em;
+}
+
+img {
+  width: 80%;
+  border: solid 2px #44F;
+}
+
+#box {
+  display: inline-block;
+  text-align: center;
+  padding: 2em;
+  width: 60%;
+  max-width: 25em;
+  border: 2px solid #44F;
+  padding-bottom: 3em;
+  margin-bottom: 3em;
+}
