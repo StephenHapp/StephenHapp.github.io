@@ -4,48 +4,84 @@
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:900" rel="stylesheet">
     <link rel="shortcut icon" href="../favicon.ico">
     <style>
-        body {
-          margin: 0;
-          background-color: black;
-          color: white;
-          text-align: center;
-          font-family: "Source Sans Pro",sans-serif;
-          overflow-x: hidden;
-        }
-        img {
-            position:relative;
-            width:100%;
-            height:100%;
-        }
-        #map {
-            position:relative;
-            padding:5vh;
-            background-color:rgb(161, 222, 146);
-        }
-        #map-container {
-            position:relative;
-            display: inline-block;
-            width:90%;
-            max-width:100vh;
-        }
-        
-        #camelot {
-            position:absolute;
-            top:13%;
-            left:8%;
-            width:22%;
-            height:28%;
-            /* background-color:#F88; */
-        }
-        
-        #camlann {
-            position:absolute;
-            top:58%;
-            left:63%;
-            width:37%;
-            height:35%;
-            /* background-color:#484; */
-        }
+      body {
+        margin: 0;
+        background-color: black;
+        color: white;
+        text-align: center;
+        font-family: "Source Sans Pro",sans-serif;
+        overflow-x: hidden;
+      }
+      img {
+          position:relative;
+          width:100%;
+          height:100%;
+      }
+      #map {
+          position:relative;
+          padding:5vh;
+          background-color:rgb(161, 222, 146);
+      }
+      #map-container {
+          position:relative;
+          display: inline-block;
+          width:90%;
+          max-width:119vh;
+      }
+
+      #camelot {
+          position:absolute;
+          top:12%;
+          left:7%;
+          width:22%;
+          height:28%;
+          /* background-color:#F88; */
+      }
+
+      #camlann {
+          position:absolute;
+          top:58%;
+          left:63%;
+          width:37%;
+          height:35%;
+          /* background-color:#484; */
+      }
+
+      #sword-stone {
+          position:absolute;
+          top:45%;
+          left:37%;
+          width:24%;
+          height:20%;
+          /* background-color:#00C; */
+      }
+
+      #avalon {
+          position:absolute;
+          top:88%;
+          left:4%;
+          width:12%;
+          height:10%;
+          /* background-color:#F80; */
+      }
+
+      #lake {
+          position:absolute;
+          top:23%;
+          left:69%; /* Nice! */
+          width:27%;
+          height:13%;
+          /* background-color:#DDD; */
+      }
+
+      #egg {
+          position:absolute;
+          top:7%;
+          left:75.5%;
+          width:4px;
+          height:4px;
+          /* background-color:#000; */
+      }
     </style>
     
     <title>Stephen Happ - Arthur's World</title>
@@ -56,17 +92,30 @@
       <div id="map-container">
         <img src="arthur/ArthurMap.png">
         <a href="arthur/camelot.html">
-          <div id="camelot"></div>
+          <div id="camelot" title="Camelot"></div>
         </a> 
         <a href="arthur/camlann.html">
-          <div id="camlann"></div>
+          <div id="camlann" title="Camlann"></div>
+        </a>
+        <a href="arthur/sword-stone.html">
+          <div id="sword-stone" title="The Sword in the Stone"></div>
+        </a>
+        <a href="arthur/avalon.html">
+          <div id="avalon" title="Avalon"></div>
+        </a>
+        <a href="arthur/lake.html">
+          <div id="lake" title="The Lady's Lake"></div>
+        </a>
+        <a href="https://en.wikipedia.org/wiki/Short_Mountain_(Virginia)" target="_blank">
+          <div id="egg" title="?"></div>
         </a>
       </div>
     </div>
     <h1>King Arthur's World</h1>
-    <p></p>
     <p>Or at least the most important parts!</p>
-    <p></p>
     <h3>Click around to learn more...</h3>
+    <a href="../index.html">
+      <p>Back to index</p>
+    </a>
   </body>
 </html>
