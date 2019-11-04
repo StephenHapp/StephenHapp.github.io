@@ -1,9 +1,105 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:900" rel="stylesheet">
-  <link rel="shortcut icon" href="../favicon.ico">
-</head>
-<body>
-</body>
+  <head>
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:900" rel="stylesheet">
+    <link rel="shortcut icon" href="../favicon.ico">
+    <style>
+      body {
+        margin: 0;
+        background-color: black;
+        color: white;
+        text-align: center;
+        font-family: "Source Sans Pro",sans-serif;
+        overflow-x: hidden;
+      }
+      img {
+          position:relative;
+          width:100%;
+          
+      }
+      #stage {
+          position:relative;
+          padding:5vh;
+          background-color:rgb(255, 156, 182);
+      }
+      #stage-container {
+          position:relative;
+          display: inline-block;
+          width:90%;
+          max-width:159vh;
+      }
+      #witches {
+          position:absolute;
+          top:36%;
+          left:1%;
+          width:28%;
+          /* background-color:#F88; */
+      }
+      #lady {
+          position:absolute;
+          top:32%;
+          left:27%;
+          width:12%;
+          /* background-color:#484; */
+      }
+      #macbeth {
+          position:absolute;
+          top:34%;
+          left:36%;
+          width:32%;
+          /* background-color:#00C; */
+      }
+      #banquo {
+          position:absolute;
+          top:30%;
+          left:60%;
+          width:15%;
+          /* background-color:#F80; */
+          -webkit-transform: scaleX(-1);
+          -ms-transform: scaleX(-1); 
+          -o-transform: scaleX(-1);
+      }
+      #macduff {
+          position:absolute;
+          top:30%;
+          left:76%;
+          width:11%;
+          -webkit-transform: scaleX(-1);
+          -ms-transform: scaleX(-1); 
+          -o-transform: scaleX(-1);
+          /* background-color:#DDD; /*
+      }
+    </style>
+    
+    <title>Stephen Happ - Arthur's World</title>
+    
+  </head>
+  <body>
+    <div id="stage">
+      <div id="stage-container">
+        <img src="macbeth/Stages.png">
+        <a href="macbeth/witches.html">
+          <img id="witches" src="macbeth/Witches-1.png">
+        </a> 
+        <a href="macbeth/lady-macbeth.html">
+          <img id="lady" src="macbeth/Lady Macbeth-1.png">
+        </a>
+        <a href="macbeth/banquo.html">
+          <img id="banquo" src="macbeth/Banquo-1.png">
+        </a>
+        <a href="macbeth/macduff.html">
+          <img id="macduff" src="macbeth/Macduff-1.png">
+        </a>
+        <a href="macbeth/macchar.html">
+            <img id="macbeth" src="macbeth/Macbeth.png">
+        </a>
+      </div>
+    </div>
+    <h1>The Cast of Macbeth</h1>
+    <p>Or at least the most important characters!</p>
+    <h3>Click around to learn more...</h3>
+    <a href="../index.html">
+      <p>Back to index</p>
+    </a>
+  </body>
 </html>
