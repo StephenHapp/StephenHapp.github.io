@@ -1,0 +1,101 @@
+body {
+  margin: 0;
+  background-color: black;
+  color: white;
+  text-align: center;
+  font-family: "Source Sans Pro",sans-serif;
+  overflow-x: hidden;
+}
+
+#left-container {
+  background-color: #FBFBFB;
+  position: absolute;
+  height: 100vh;
+  width: 50vw;
+  display: flex;
+  align-items: center;
+}
+
+#right-container {
+  /* background-color: yellowgreen; */
+  height: 100vh;
+  width: 50vw;
+  position: absolute;
+  right: 0px;
+  display: flex;
+  border-left: 2px solid rgb(255, 117, 37);
+}
+
+.text-box {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  height: 50vh;
+  display: none;
+}
+
+#text-1 {
+  display: block;
+}
+
+#next-button {
+  height: 10vh;
+  width: 20vh;
+  position: absolute;
+  top: 80vh;
+  right: 10vw;
+  cursor: pointer;
+}
+
+img {
+  max-height: 100%;
+  max-width: 100%;
+  width: auto;
+  height: auto;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  display: none;
+}
+
+#finger {
+  display: block;
+}
+
+#title-page {
+  display: block;
+}
+
+#skull {
+  position: relative;
+  top: 50vw;
+  width: 99%;
+  z-index: 1;
+}
+
+#brain {
+  width: 30%;
+  max-width: 24vh;
+  left: -4vw;
+}
+
+#blob {
+  width: 100vw;
+  max-height: 99999vh;
+  max-width: 99999vw;
+  left: -25vw;
+}
+
+#end-1 {
+  top: 5em;
+}
+
+a:visited {
+  color: deeppink;
+}
