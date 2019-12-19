@@ -1,0 +1,90 @@
+body {
+  margin: 0;
+  background-color: black;
+  color: white;
+  text-align: center;
+  font-family: "Source Sans Pro",sans-serif;
+  overflow-x: hidden;
+}
+
+img {
+    position:relative;
+    width:100%;
+    height:100%;
+}
+
+#map {
+    position:relative;
+    padding:5vh;
+    background-color: #44F;
+}
+
+#map-container {
+    position:relative;
+    display: inline-block;
+    width:90%;
+    max-width:119vh;
+}
+
+#mountains {
+    position:absolute;
+    top:35%;
+    left:28%;
+    width:25%;
+    height:14%;
+    /* background-color:#F88; */
+}
+
+#scar {
+    position:absolute;
+    top:52%;
+    left:58%;
+    width:25%;
+    height:24%;
+    /* background-color:#484; */
+}
+
+#pig {
+    position:absolute;
+    top:50%;
+    left:30%;
+    width:9%;
+    height:11%;
+    /* background-color:#00F; */
+}
+
+#beach {
+    position:absolute;
+    top:72%;
+    left:37%;
+    width:18%;
+    height:10%;
+    /* background-color:#F80; */
+}
+
+#fire {
+    position:absolute;
+    top:26%;
+    left:60%;
+    width:10%;
+    height:10%;
+    /* background-color:#DDD; */
+}
+
+#info-box-1, #info-box-2, #info-box-3 {
+  left: 60%;
+}
+
+#info-box-4, #info-box-5 {
+  left: 3%;
+}
+
+.info {
+  position: absolute;
+  top: 3%;
+  height: 93%;
+  width: 38%;
+  background-color: white;
+  display: none;
+  color: black;
+}
