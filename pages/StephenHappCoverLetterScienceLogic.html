@@ -1,0 +1,105 @@
+<head>
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@800&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Sanchez&display=swap" rel="stylesheet">
+	<style>
+		body {
+			background-color: rgb(80, 50, 150);
+			margin: 10vw;
+			margin-bottom: 0;
+			padding: 0;
+			height: 90vw;
+		}
+
+		h1 {
+			text-align: center;
+			font-size: 5vw;
+			font-family: "Nunito", sans-serif;
+			margin: 0;
+			margin-top: 5vw;
+		}
+
+		p {
+			font-family: "Sanchez", serif;
+			padding-left: 4vw;
+			padding-right: 4vw;
+			font-size: 2vw;
+		}
+
+		.align-right {
+			float: right;
+		}
+
+		#paper {
+			position: absolute;
+			left: 20vw;
+			width: 60vw;
+			height: 80vw;
+			background-color: white;
+			z-index: 0;
+		}
+
+		#shadow {
+			position: absolute;
+			top: 12vw;
+			left: 18vw;
+			width: 60vw;
+			height: 80vw;
+			background-color: rgb(40, 25, 75);
+			z-index: 0;
+		}
+
+		#signature {
+			background-color: black;
+			color: white;
+			padding: 0.5vw;
+		}
+	</style>
+
+	<script>
+		var colorShade = 0;
+		var colorBrightness = 100;
+
+	    function myMove() {
+			var elem = document.getElementById("signature");
+        	var timer = 0;
+        	var id = setInterval(frame, 10);
+        	function frame() {
+            	timer++;
+            	elem.style.color = "hsl(" + colorShade + ", 100%, " + (80) + "%)";
+            	colorShade += 1;
+        	}
+		}
+	</script>
+</head>
+
+<body onload="myMove()">
+	<div id="shadow"></div>
+	<div id="paper">
+		<h1>Stephen Happ</h1>
+		<p>happstephen@gmail.com <span class="align-right">540-331-0778</span></p>
+		<br>
+		<p>
+			<strong>Hello ScienceLogic!</strong> I'm a GMU CS student seeking a summer
+	    	internship to gain experience in Software Engineering.
+    	</p>
+		<p>
+			I've been playing with JavaScript since high school, so I'm genuinely
+			interested in this internship where my current experience will find good use.
+			My website
+			<a href="https://stephenhapp.github.io" target="_blank">stephenhapp.github.io</a>
+		 	shows what I'm already capable of doing, and I'm always ready to learn
+			more! Also, with 2 semesters of experience working with a small team of
+			programmers on GMU's Game Design Club, I'm ready to work and communicate
+			with a scrum team building awesome UI and then some.
+		</p>
+		<p>
+    		Whether it's over Zoom or in person, I'll be ready for the interview!
+			Thank you so much for taking a minute to consider me for the internship!
+		</p>
+		<br>
+		<p class="align-right"><em><strong>Sincerely,
+			<span id="signature">Stephen Happ</span>
+		</strong></em></p>
+  </div>
+</body>
