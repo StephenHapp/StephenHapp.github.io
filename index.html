@@ -1,0 +1,69 @@
+﻿<!DOCTYPE html>
+
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Stephen Happ</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicon.ico">
+</head>
+<body onload='myMove("name-bg-div"); adjustColumns(); startBoxesAnimation()'>
+    <div id="header">
+        <div id="name-bg-div" class="inner-div">
+            <div id="name-mouse-detect-div">
+                <h1 onmouseover="mouseOverBox()" onmouseleave="mouseOffBox()" id="name-text">Stephen Happ</h1>
+            </div>
+        </div>
+		<div id="menu-bg" class="inner-div">
+			<h4 id="menu-words">
+				<a href="index.html">ABOUT ME</a>
+				<a href="index.html">PROJECTS</a>
+			</h4>
+		</div>
+    </div>
+
+	<div id="content">
+	    <div id="content-area">
+			<div class="project-box lua">
+				<img src="images/robloxThumb.png" class="project-box-image"><img>
+				<div class="project-box-type">
+					<h3 class="project-box-type-text">Lua, Roblox Studio</h3>
+				</div>
+				<a href="pages/waterslide.html"><div class="project-box-clickable"></div></a>
+			</div>
+			<div class="project-box lua">
+				<img src="images/robloxLighthouseThumb.png" class="project-box-image"><img>
+				<div class="project-box-type">
+					<h3 class="project-box-type-text">Lua, Roblox Studio</h3>
+				</div>
+				<a href="pages/lighthouse.html"><div class="project-box-clickable"></div></a>
+			</div>
+			<div class="project-box lua">
+				<img src="images/robloxPlaneThumb.png" class="project-box-image"><img>
+				<div class="project-box-type">
+					<h3 class="project-box-type-text">Lua, Roblox Studio</h3>
+				</div>
+				<a href="pages/planeChallenge.html"><div class="project-box-clickable"></div></a>
+			</div>
+			<div class="project-box python">
+				<img src="images/robloxNamesThumb.png" class="project-box-image"><img>
+				<div class="project-box-type">
+					<h3 class="project-box-type-text">Python</h3>
+				</div>
+				<a href="pages/robloxUsernames.html"><div class="project-box-clickable"></div></a>
+			</div>
+			<div class="project-box js">
+				<img src="images/cursorPaintThumb.png" class="project-box-image"><img>
+				<div class="project-box-type">
+					<h3 class="project-box-type-text">JavaScript</h3>
+				</div>
+				<a href="pages/cursorPaint.html"><div class="project-box-clickable"></div></a>
+			</div>
+	    </div>
+	</div>
+	<div id="em-box" style="height:0;width:0;outline:none;border:none;padding:none;margin:none;box-sizing:content-box;"></div>
+    <script src="scripts/name-animation.js"></script>
+	<script src="scripts/grid-adjust.js"></script>
+</body>
+</html>
