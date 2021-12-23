@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Stephen Happ</title>
+
+    <link rel="stylesheet" href="../style.css">
+	<link id="vidStyle" rel="stylesheet" href="../video-pages-2col-style.css">
+    <link rel="shortcut icon" href="../favicon.ico">
+</head>
+
+<body onload='myMove("name-bg-div"); adjustContent()'>
+    <div id="header">
+        <div id="name-bg-div" class="inner-div">
+            <div id="name-mouse-detect-div">
+                <h1 onmouseover="mouseOverBox()" onmouseleave="mouseOffBox()" id="name-text">Stephen Happ</h1>
+            </div>
+        </div>
+		<div id="menu-bg" class="inner-div">
+			<h4 id="menu-words">
+				<a href="../index.html">ABOUT ME</a>
+				<a href="../index.html">PROJECTS</a>
+			</h4>
+		</div>
+    </div>
+	<div id="content">
+		<div id="video-container">
+			<video id="main-video" muted autoplay controls>
+				<source src="../videos/robloxUsernamesVid.webm" type="video/webm">
+			</video>
+		</div>
+		<div id="text-container">
+			<div id="text">
+				<h2>Roblox username web scraper with multithreading</h2>
+				<p>
+					What this Python program does is gather as many usernames of
+					Roblox profiles as it can and store them in a text document.
+					Multithreading allows it to send lots of requests for different
+					profiles at once, and also store the usernames in proper numerical
+					order.
+					<br><br>
+					This project I remember working on in my dorm room during my
+					freshman year at GMU. I'll admit I also felt a bit like
+					Mark Zuckerberg as portrayed in <i>The Social Network</i>, which
+					I had recently watched for a computer science course.
+					Scraping the Roblox website for data to store for my own
+					purposes... if I could think of a real use for it, that is.
+					<br><br>
+					This program worked a lot better when I first made it. When
+					I went back to it to record the video, I found that Roblox had
+					changed the layout of their profile pages. Also my program
+					was receiving new errors from the Roblox website, so I had to work
+					around those to get the program working again.
+					<br><br>
+					On and older version of my site I had posted a download link
+					for the first 1,000,000 roblox usernames in a text document,
+					but since it seems to crash Notepad now, I've decided it's best not
+					to share it anymore.
+					<br>
+				</p>
+				<br>
+			</div>
+		</div>
+	</div>
+	<div id="em-box" style="height:0;width:0;outline:none;border:none;padding:none;margin:none;box-sizing:content-box;"></div>
+	<script src="../scripts/name-animation.js"></script>
+	<script src="../scripts/video-adjust.js"></script>
+</body>
+</html>

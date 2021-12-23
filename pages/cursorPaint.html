@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Stephen Happ</title>
+
+    <link rel="stylesheet" href="../style.css">
+	<link id="vidStyle" rel="stylesheet" href="../video-pages-2col-style.css">
+    <link rel="shortcut icon" href="../favicon.ico">
+</head>
+
+<body onload='myMove("name-bg-div"); adjustContent()'>
+    <div id="header">
+        <div id="name-bg-div" class="inner-div">
+            <div id="name-mouse-detect-div">
+                <h1 onmouseover="mouseOverBox()" onmouseleave="mouseOffBox()" id="name-text">Stephen Happ</h1>
+            </div>
+        </div>
+		<div id="menu-bg" class="inner-div">
+			<h4 id="menu-words">
+				<a href="../index.html">ABOUT ME</a>
+				<a href="../index.html">PROJECTS</a>
+			</h4>
+		</div>
+    </div>
+	<div id="content">
+		<div id="video-container">
+			<script src="../scripts/processing.min.js"></script>
+			<canvas id = "main-video" style="border:2px solid #0000FF;"></canvas>
+			<!-- the code -->
+	        <script type="application/processing" data-processing-target="main-video">
+			   const mainVideo = document.getElementById("main-video");
+	           // ProcessingJS below!
+	           // Initialization Settings
+	           size(mainVideo.offsetWidth, mainVideo.offsetWidth * 0.75);
+	           frameRate(60);
+	           background(255, 255, 255);
+	           fill(0, 0, 0);
+	           noCursor();
+	           // Define the array
+	           var drawingData = [];
+	           // Define variables for 'draw' loop
+	           var dataNum = 0;
+	           var thePenSize = 16;
+	           draw = function() {
+				 size(mainVideo.offsetWidth, mainVideo.offsetWidth * 0.75);
+				 // Take in input
+	             if (mousePressed === true) {
+	               drawingData.push(mouseX);
+	               drawingData.push(mouseY);
+	             } else {
+	               if (drawingData[drawingData.length - 1] !== -1 && drawingData.length > 0) {
+	                 drawingData.push(-1);
+	               }              }
+	              // Display the recording
+	             background(255, 255, 255);
+	             strokeWeight(thePenSize);
+	             stroke(0, 0, 0);
+	             dataNum = 0;
+	             while (dataNum+2 < drawingData.length) {
+	               if (drawingData[dataNum+2] !== -1) {
+	                 line(drawingData[dataNum],drawingData[dataNum+1],drawingData[dataNum+2],drawingData[dataNum+3]);
+	                 dataNum += 2;
+	               } else {
+	                 dataNum += 3;
+	              }
+	             }
+	             // Display the cursor
+	             strokeWeight(2);
+	             stroke(255, 0, 0);
+	             line(mouseX-10, mouseY, mouseX+10, mouseY);
+	             line(mouseX, mouseY-10, mouseX, mouseY+10);
+	             //text(drawingData,0,400)
+	           }
+	           // ProcessingJS above!
+	        </script>
+		</div>
+		<div id="text-container">
+			<div id="text">
+				<h2>CursorPaint</h2>
+				<p>
+					One of my earliest JavaScript projects. If you're on PC,
+					click the canvas to draw on it. If you're on mobile, it won't
+					work. That's about it.
+					<br><br>
+					I made this in February 2019,
+					my Junior year of high school. Definitely learned a lot more
+					about HTML/CSS/JavaScript since then, but I still think it's
+					pretty neat.
+					<br>
+				</p>
+				<br>
+			</div>
+		</div>
+	</div>
+	<div id="em-box" style="height:0;width:0;outline:none;border:none;padding:none;margin:none;box-sizing:content-box;"></div>
+	<script src="../scripts/name-animation.js"></script>
+	<script src="../scripts/video-adjust.js"></script>
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Stephen Happ</title>
+
+    <link rel="stylesheet" href="../style.css">
+	<link id="vidStyle" rel="stylesheet" href="../video-pages-2col-style.css">
+    <link rel="shortcut icon" href="../favicon.ico">
+</head>
+
+<body onload='myMove("name-bg-div"); adjustContent()'>
+    <div id="header">
+        <div id="name-bg-div" class="inner-div">
+            <div id="name-mouse-detect-div">
+                <h1 onmouseover="mouseOverBox()" onmouseleave="mouseOffBox()" id="name-text">Stephen Happ</h1>
+            </div>
+        </div>
+		<div id="menu-bg" class="inner-div">
+			<h4 id="menu-words">
+				<a href="../index.html">ABOUT ME</a>
+				<a href="../index.html">PROJECTS</a>
+			</h4>
+		</div>
+    </div>
+	<div id="content">
+		<div id="video-container">
+			<video id="main-video" muted autoplay controls>
+				<source src="../videos/robloxLighthouse.webm" type="video/webm">
+			</video>
+		</div>
+		<div id="text-container">
+			<div id="text">
+				<h2>Survive the falling lighthouse! on Roblox</h2>
+				<p>
+					View the page on Roblox here: <a href="https://www.roblox.com/games/7159305743/" target="_blank"><u>https://www.roblox.com/games/7246521256/</u></a>
+					<br><br>
+					This was the second of the three Roblox games I made over the
+					summer of 2021. I've always wanted to play a game on Roblox
+					about climbing a large structure as it was slowly tilting and
+					falling apart, and after my work on Build a Plane Challenge 2021
+					I realized I had learned how to make it!
+					<br><br>
+					It's a very simple game that was relatively simple to program,
+					and the code is much cleaner than in my earlier Roblox projects.
+					I think there's a kind of beauty in making a game with such a
+					simple premise that I still enjoy playing again.
+					<br>
+				</p>
+				<br>
+			</div>
+		</div>
+	</div>
+	<div id="em-box" style="height:0;width:0;outline:none;border:none;padding:none;margin:none;box-sizing:content-box;"></div>
+	<script src="../scripts/name-animation.js"></script>
+	<script src="../scripts/video-adjust.js"></script>
+</body>
+</html>
