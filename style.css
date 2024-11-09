@@ -75,7 +75,8 @@ a {
 #name-bg-div {
     background-color: rgb(18, 13, 23);
     margin: 10px;
-	height: calc(100% - 60px)
+	height: calc(100% - 60px);
+    width: calc(100% - 20px);
 }
 
 #name-text {
@@ -86,9 +87,9 @@ a {
 }
 
 #name-mouse-detect-div {
-    background-color: rgb(18, 13, 23);
+    background-color: transparent;
     position: initial;
-    width: 28em;
+    width: 29em;
     margin-left: calc(50% - 14em);
     padding: 0;
     margin-top: 15px;
