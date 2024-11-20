@@ -67,11 +67,6 @@ p {
     text-align: left;
 }
 
-a {
-	color: inherit;
-	text-decoration-line: none;
-}
-
 #name-bg-div {
     background-color: rgb(18, 13, 23);
     margin: 10px;
@@ -112,6 +107,11 @@ a {
 	padding-top: 10px;
 	display: inline-grid;
 	grid-template-columns: auto auto;
+}
+
+#menu-words a {
+    color: inherit;
+	text-decoration-line: none;
 }
 
 #content {
