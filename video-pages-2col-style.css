@@ -13,6 +13,14 @@
 	margin-bottom: 2em;
 }
 
+#main-image {
+	position: absolute;
+    right: 2em;
+    max-height: calc(100vh - 14em);
+	margin-top: 2em;
+	margin-bottom: 2em;
+}
+
 #content {
 	position: relative;
 	top: 10em;
@@ -23,7 +31,16 @@
 #text-container {
 	position: fixed;
 	width: 50%;
-	max-width: calc((100vh - 10em) * 16 / 9 - 4em);
+	height: calc(100% - 10em);
+	top: 10em;
+	left: 50%;
+	overflow-y: auto;
+}
+
+#text-container-thin {
+	position: fixed;
+	width: 50%;
+    max-width: calc((100vh - 14em) * 9 / 16 + 4em);
 	height: calc(100% - 10em);
 	top: 10em;
 	left: 50%;

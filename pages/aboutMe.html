@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Stephen Happ</title>
+
+    <link rel="stylesheet" href="../style.css">
+	<link id="vidStyle" rel="stylesheet" href="../video-pages-2col-style.css">
+    <link rel="shortcut icon" href="../favicon.ico">
+</head>
+
+<body onload='myMove("name-bg-div"); adjustContent()'>
+    <div id="header">
+        <div id="name-bg-div" class="inner-div">
+            <div id="name-mouse-detect-div">
+                <h1 onmouseover="mouseOverBox()" onmouseleave="mouseOffBox()" id="name-text">Stephen Happ</h1>
+            </div>
+        </div>
+		<div id="menu-bg" class="inner-div">
+			<h4 id="menu-words">
+				<a href="../pages/aboutMe.html">ABOUT ME</a>
+				<a href="../index.html">PROJECTS</a>
+			</h4>
+		</div>
+    </div>
+	<div id="content">
+		<div id="video-container">
+			<img id="main-image" src="../images/profile-pic-12132024.jpg">
+		</div>
+		<div id="text-container-thin">
+			<div id="text">
+				<p>
+                    Hi there! 
+                    <br><br>
+                    I graduated from George Mason University in May 2024 with a 
+                    Bachelor's in Computer Science. During my time there, I helped
+                    out as officer of a few different clubs, including the 
+                    <a target="_blank" href="https://gadig.itch.io/">university's
+                    game design club</a>. I also served as an Undergraduate
+                    Teaching Assistant for different Computer Science courses.
+                    <br><br>
+                    During the summer of 2023, I worked as a Computer Science
+                    Intern for AnaVation in Fairfax, VA. I primarily worked with
+                    Android Studio and Java to build an Android app prototype within
+                    a small team of other interns.
+                    <br><br>
+                    Right now, I'm looking for a new place to work and put my CS
+                    degree to good use. I'm an aspiring Software Engineer (perhaps
+                    a Game Developer if I could be so lucky), but I'm open to
+                    any position where my previous experience and projects makes
+                    me a good fit.
+				</p>
+				<br>
+			</div>
+		</div>
+	</div>
+	<div id="em-box" style="height:0;width:0;outline:none;border:none;padding:none;margin:none;box-sizing:content-box;"></div>
+	<script src="../scripts/name-animation.js"></script>
+	<script src="../scripts/video-adjust.js"></script>
+</body>
+</html>
