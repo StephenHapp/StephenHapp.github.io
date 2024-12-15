@@ -11,6 +11,11 @@
 	width: 100%;
 }
 
+#main-image {
+	position: relative;
+    height: calc(100vw * 9 / 16);
+}
+
 #content {
 	position: relative;
 	top: 10em;
@@ -19,6 +24,15 @@
 }
 
 #text-container {
+	position: fixed;
+	width: 100%;
+	height: calc(100vh - (10em + (100vw * 9 / 16)));
+	top: calc(10em + (100vw * 9 / 16));
+	left: 0;
+	overflow-y: auto;
+}
+
+#text-container-thin {
 	position: fixed;
 	width: 100%;
 	height: calc(100vh - (10em + (100vw * 9 / 16)));

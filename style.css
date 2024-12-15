@@ -67,6 +67,10 @@ p {
     text-align: left;
 }
 
+a:link {
+    color: rgb(87, 98, 213);
+}
+
 #name-bg-div {
     background-color: rgb(18, 13, 23);
     margin: 10px;
